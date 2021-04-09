@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+header {
+    background-image: url("bannière-films.jpg");
+    background-size: contain;
+}
+h1{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+    text-shadow: 10px 5px 5px antiquewhite;
+}
+.navbar{
+    list-style: none;
+    text-align: center;
+    background-color: #2d313c;
+    padding: 10px 0;
+}
+.navbar li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.navbar li a {
+    text-decoration: none;
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 360px;
+    margin: auto;
+    margin-top: 50px;
+}
+.ajouter_film h2, .ajouter_film form{
+    text-align: center;
+}
+.ajouter_film label {
+    display: inline-block;
+    width: 65px;
+}
+.ajouter_film input {
+    margin: 10px;
+}
+.modifier_film label {
+    display: inline-block;
+    width: 105px;
+}
+.modifier_film h2, .modifier_film form{
+    text-align: center;
+}
+.modifier_film input {
+    margin: 10px;
+}
+.section_film {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.filmList h3, .filmList p{
+    display: inline-block;
+    margin: 3px;
+}
+.filmList h3{
+    font-size: 13px;
+    width: 270px;
+}
+.section_fiche h2 {
+    font-size: 15px;
+    text-align: center;
+}
+#jaquetteFiche {
+    width: 220px;
+    height: 319px;
+}
+input, textarea {
+    width: 208px;
+}
+#synopsisLabel{
+    vertical-align: top;
+}
+
+@media screen and (min-width: 600px){
+    .section_fiche {
+        width: 450px;
+        margin: auto;
+        background-color: darkkhaki;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .modifier_fiche {
+        padding-bottom: 10px;
+    }
+}
